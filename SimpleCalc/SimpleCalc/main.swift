@@ -36,7 +36,9 @@ public class Calculator {
             let first = (Int(args[0]))!
             switch args[size-1] {
             case "fact":
-                res = factorial(first)
+                if (first >= 0) {
+                    res = factorial(first)
+                }
             case "avg":
                 res = average(args)
             default: //count
